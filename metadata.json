@@ -1,0 +1,8 @@
+{
+  "name": "KALYAN DIGITAL STUDIO",
+  "description": "Premium, modern, luxury fine-art photography studio focusing on capturing life's most beautiful moments with elegant, cinematic editorial styling.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}
