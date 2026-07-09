@@ -5,6 +5,7 @@
 
 import React, { useState, useEffect, useRef } from 'react';
 import studioImage from './assets/images/kalyan_studio_header.jpg';
+import logoImage from './assets/images/WhatsApp Image 2026-07-09 at 12.41.59 PM.jpeg';
 import { CylinderCarousel } from './components/ui/cylinder-carousel';
 import beachLady from './assets/images/kalyan_studio_beach_lady_1783493108452.jpg';
 import coupleWall from './assets/images/kalyan_studio_couple_wall_1783493129071.jpg';
@@ -12,7 +13,7 @@ import coupleBeach from './assets/images/kalyan_studio_couple_beach_178349314701
 import coupleMoon from './assets/images/kalyan_studio_couple_moon_1783493164786.jpg';
 import coupleSaree from './assets/images/kalyan_studio_couple_saree_1783493179061.jpg';
 import coupleJumping from './assets/images/kalyan_studio_couple_jumping_1783493205640.jpg';
-import weddingVideo from './assets/images/WhatsApp Video 2026-07-08 at 12.59.34 PM.mp4';
+const weddingVideo = "https://assets.mixkit.co/videos/preview/mixkit-bride-and-groom-holding-hands-and-walking-4512-large.mp4";
 
 const CAROUSEL_IMAGES = [
   { src: beachLady, alt: "Beach Editorial Portrait" },
@@ -39,6 +40,7 @@ import {
   Calendar, 
   Mail, 
   Phone, 
+  Globe,
   User, 
   ChevronLeft, 
   ChevronRight, 
@@ -610,7 +612,7 @@ export default function App() {
           <div className="flex items-center gap-5">
             <div className="h-16 w-16 sm:h-20 sm:w-20 rounded-2xl overflow-hidden border-2 border-[#D4AF37]/60 shadow-lg transform hover:scale-105 transition-transform duration-300">
               <img 
-                src={studioImage} 
+                src={logoImage} 
                 alt="Kalyan Digital Studio Logo" 
                 className="h-full w-full object-cover"
                 referrerPolicy="no-referrer"
@@ -635,9 +637,7 @@ export default function App() {
             <div className="flex items-center gap-3 bg-white/5 backdrop-blur-sm px-4 py-2.5 rounded-2xl border border-white/10 shadow-sm">
               <Phone className="w-4 h-4 text-[#D4AF37]" />
               <div className="flex items-center gap-2">
-                <a href="tel:+919550104000" className="hover:text-[#D4AF37] transition-colors font-semibold" aria-label="Call primary number +91 9550104000">9550104000</a>
-                <span className="text-stone-500">|</span>
-                <a href="tel:+919985302000" className="hover:text-[#D4AF37] transition-colors font-semibold" aria-label="Call secondary number +91 9985302000">9985302000</a>
+                <a href="tel:+919985302000" className="hover:text-[#D4AF37] transition-colors font-semibold" aria-label="Call studio number +91 9985302000">9985302000</a>
               </div>
             </div>
           </div>
@@ -862,9 +862,9 @@ export default function App() {
 
                 {/* Image container with inner border */}
                 <div className="overflow-hidden rounded-xl bg-[#26211E] relative aspect-[4/3] border border-[#D4AF37]/10 shadow-inner">
-                  {studioImage ? (
+                  {logoImage ? (
                     <img 
-                      src={studioImage} 
+                      src={logoImage} 
                       alt="Kalyan Digital Studio Official Masterpiece" 
                       className="w-full h-full object-cover group-hover:scale-102 transition-transform duration-700"
                       loading="eager"
@@ -1552,7 +1552,7 @@ export default function App() {
 
             {/* Absolute Camera lens tag */}
             <div className="absolute -bottom-6 -right-6 bg-[#FFFDF8] border border-[#E5DCCF] p-5 rounded-2xl shadow-lg max-w-[220px]">
-              <p className="text-[10px] font-bold uppercase tracking-wider text-[#D4AF37] mb-1">Kalyan Kumar</p>
+              <p className="text-[10px] font-bold uppercase tracking-wider text-[#D4AF37] mb-1">Kalyan Babu K</p>
               <p className="text-xs font-serif-elegant italic text-stone-500">"Light is my raw medium; Telugu wedding rituals & human authenticity are my target."</p>
             </div>
           </div>
@@ -1720,21 +1720,19 @@ export default function App() {
                   <div>
                     <p className="text-[9px] uppercase text-stone-400 font-bold">Studio Phone</p>
                     <p className="text-xs font-semibold text-[#3C352E]">
-                      <a href="tel:+919550104000" className="hover:text-[#D4AF37] transition-colors duration-300 focus:outline-none focus:underline" aria-label="Call primary studio phone +91 9550104000">+91 9550104000</a>
-                      {" / "}
-                      <a href="tel:+919985302000" className="hover:text-[#D4AF37] transition-colors duration-300 focus:outline-none focus:underline" aria-label="Call secondary studio phone +91 9985302000">+91 9985302000</a>
+                      <a href="tel:+919985302000" className="hover:text-[#D4AF37] transition-colors duration-300 focus:outline-none focus:underline" aria-label="Call studio phone +91 9985302000">+91 9985302000</a>
                     </p>
                   </div>
                 </div>
 
                 <div className="flex items-center space-x-3.5">
                   <div className="p-2.5 bg-white rounded-full text-[#D4AF37] shadow-sm">
-                    <Mail className="w-4 h-4" />
+                    <Globe className="w-4 h-4" />
                   </div>
                   <div>
-                    <p className="text-[9px] uppercase text-stone-400 font-bold">Inquiries</p>
+                    <p className="text-[9px] uppercase text-stone-400 font-bold">Website</p>
                     <p className="text-xs font-semibold text-[#3C352E]">
-                      <a href="mailto:kalyandigitalstudio@gmail.com" className="hover:text-[#D4AF37] transition-colors duration-300 focus:outline-none focus:underline" aria-label="Email Kalyan Digital Studio at kalyandigitalstudio@gmail.com">kalyandigitalstudio@gmail.com</a>
+                      <a href="https://www.kalyandigitals.com" target="_blank" rel="noopener noreferrer" className="hover:text-[#D4AF37] transition-colors duration-300 focus:outline-none focus:underline" aria-label="Visit Kalyan Digital Studio Website">www.kalyandigitals.com</a>
                     </p>
                   </div>
                 </div>
@@ -1768,7 +1766,7 @@ export default function App() {
                 {/* Beautiful frame for Kalyan Digital Studio original brand image */}
                 <div className="relative overflow-hidden rounded-2xl border-2 border-[#D4AF37]/30 shadow-lg group">
                   <img 
-                    src={studioImage} 
+                    src={logoImage} 
                     alt="Kalyan Digital Studio Official Banner" 
                     className="w-full h-auto object-cover transition-transform duration-700 group-hover:scale-105"
                     referrerPolicy="no-referrer"
@@ -1792,44 +1790,30 @@ export default function App() {
 
               {/* Direct Call / Chat action buttons */}
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mt-8 pt-6 border-t border-[#F7F1E8]">
-                {/* Primary Call */}
+                {/* Direct Call */}
                 <a 
-                  href="tel:+919550104000"
+                  href="tel:+919985302000"
                   className="flex items-center justify-center gap-3 py-4 px-6 rounded-xl bg-[#3C352E] hover:bg-[#D4AF37] text-white hover:text-white text-xs font-semibold tracking-widest uppercase transition-all duration-300 shadow-md hover:shadow-lg hover:-translate-y-0.5 active:translate-y-0 group"
                   id="direct-call-primary"
-                  aria-label="Call primary studio line +91 95501 04000"
+                  aria-label="Call studio line +91 99853 02000"
                 >
                   <Phone className="w-4 h-4 text-[#D4AF37] group-hover:text-white" />
                   <div className="text-left">
-                    <p className="text-[8px] opacity-75 font-mono uppercase tracking-wider">Primary Line</p>
-                    <p className="text-xs font-bold tracking-widest">95501 04000</p>
-                  </div>
-                </a>
-
-                {/* Secondary Call */}
-                <a 
-                  href="tel:+919985302000"
-                  className="flex items-center justify-center gap-3 py-4 px-6 rounded-xl border border-[#E5DCCF] hover:border-[#D4AF37] text-[#3C352E] hover:text-[#D4AF37] bg-white text-xs font-semibold tracking-widest uppercase transition-all duration-300 shadow-sm hover:shadow-md hover:-translate-y-0.5 active:translate-y-0"
-                  id="direct-call-secondary"
-                  aria-label="Call secondary studio line +91 99853 02000"
-                >
-                  <Phone className="w-4 h-4 text-[#D4AF37]" />
-                  <div className="text-left">
-                    <p className="text-[8px] opacity-75 font-mono uppercase tracking-wider">Secondary Line</p>
+                    <p className="text-[8px] opacity-75 font-mono uppercase tracking-wider">Direct Studio Call</p>
                     <p className="text-xs font-bold tracking-widest">99853 02000</p>
                   </div>
                 </a>
 
-                {/* WhatsApp Chat Button - full width on mobile/grid */}
+                {/* WhatsApp Chat Button */}
                 <a 
                   href="https://wa.me/919985302000?text=Hi%20Kalyan%20Digital%20Studio%2C%20I%20would%20like%20to%20book%20a%20photography%20session%20with%20you."
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="sm:col-span-2 flex items-center justify-center gap-3 py-4 px-6 rounded-xl bg-[#25D366] hover:bg-[#20ba56] text-white text-xs font-semibold tracking-widest uppercase transition-all duration-300 shadow-md hover:shadow-lg hover:-translate-y-0.5 active:translate-y-0"
+                  className="flex items-center justify-center gap-3 py-4 px-6 rounded-xl bg-[#25D366] hover:bg-[#20ba56] text-white text-xs font-semibold tracking-widest uppercase transition-all duration-300 shadow-md hover:shadow-lg hover:-translate-y-0.5 active:translate-y-0"
                   id="direct-whatsapp"
                 >
                   <Send className="w-4 h-4 animate-bounce" />
-                  <div className="text-center">
+                  <div className="text-left">
                     <p className="text-[8px] opacity-90 font-mono uppercase tracking-wider">Instant Chat & Booking</p>
                     <p className="text-xs font-bold tracking-widest">Connect on WhatsApp</p>
                   </div>
